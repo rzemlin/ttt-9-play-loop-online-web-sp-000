@@ -35,4 +35,17 @@ def turn(board)
   end
 end
 
+def current_player(board)
+  turn_count(board) % 2 == 0? "X" : "O"
+end
+
+def play(board)
+  counter = 0
+   until counter == 9
+  play(board)
+  counter += 1
+  end
+  
+
+
 # Define your play method below
